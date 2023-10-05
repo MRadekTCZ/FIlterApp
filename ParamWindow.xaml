@@ -1,0 +1,119 @@
+﻿<Window x:Class="FilterApp.ParamWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FilterApp"
+        mc:Ignorable="d"
+        Title="ParamWindow" Height="200" Width="400"
+        MinWidth = "400"
+        MinHeight="200"
+        SizeToContent="WidthAndHeight"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        WindowStartupLocation="CenterOwner"
+        Background="Gray">
+
+    <Window.Resources>
+        <Style x:Key="btnStyle" TargetType="Button">
+            <Setter Property="Background" Value="#333333"></Setter>
+            <Setter Property="Foreground" Value="#FFFFFF"></Setter>
+            <Setter Property="FontFamily" Value="Courier"></Setter>
+            <Setter Property="FontSize" Value="14"></Setter>
+        </Style>
+        <Style x:Key="boxStyle" TargetType="TextBox">
+            <Setter Property="Background" Value="#222222"></Setter>
+            <Setter Property="Foreground" Value="#FFFFFF"></Setter>
+            <Setter Property="BorderBrush" Value="#333333"></Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#333333"></Setter>
+                    <Setter Property="Foreground" Value="#FFFFFF"></Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="WhiteTextBlockStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White" />
+        </Style>
+        <Style x:Key="BoldGroupBoxStyle" TargetType="GroupBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="GroupBox">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Border Grid.Row="0" BorderThickness="1" BorderBrush="Gray" Background="Gray">
+                                <TextBlock Text="{TemplateBinding Header}" FontWeight="Bold" Padding="5" Foreground="White" />
+                            </Border>
+                            <Border Grid.Row="1" BorderThickness="1" BorderBrush="Gray">
+                                <ContentPresenter />
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Window.Resources>
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <GroupBox Header="Supply parameters" Grid.Row="0" Grid.Column="0" Style="{StaticResource BoldGroupBoxStyle}">
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal" Margin="5,5,0,5">
+                    <TextBlock Text="Voltage Max [V]:" Width="100"  Style="{StaticResource WhiteTextBlockStyle}" ></TextBlock>
+                    <TextBox Name="txtMagnitude" Width="60" Style="{StaticResource boxStyle}"  ></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5,5,0,5">
+                    <TextBlock Text="Freq min [Hz]:" Width="100" Style="{StaticResource WhiteTextBlockStyle}"></TextBlock>
+                    <TextBox Name="txtFreqMin" Width="60" Style="{StaticResource boxStyle}" ></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5,5,0,5">
+                    <TextBlock Text="Freq max [Hz]:" Width="100" Style="{StaticResource WhiteTextBlockStyle}"></TextBlock>
+                    <TextBox Name="txtFreqMax" Width="60" Style="{StaticResource boxStyle}" ></TextBox>
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Filter parameters" Grid.Row="0" Grid.Column="1" Style="{StaticResource BoldGroupBoxStyle}">
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal" Margin="5,5,0,5">
+                    <TextBlock Text="Resistance [Ohm]:" Width="100" Style="{StaticResource WhiteTextBlockStyle}"></TextBlock>
+                    <TextBox Name="txtResistance" Width="60" Style="{StaticResource boxStyle}" ></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5,5,0,5">
+                    <TextBlock Text="Resistance [Ohm]:" Width="100" Style="{StaticResource WhiteTextBlockStyle}"></TextBlock>
+                    <TextBox Name="txtResistance2" Width="60" Style="{StaticResource boxStyle}" ></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5,5,0,5">
+                    <TextBlock Text="Inductance [H]:" Width="100" Style="{StaticResource WhiteTextBlockStyle}"></TextBlock>
+                    <TextBox Name="txtInductance" Width="60" Style="{StaticResource boxStyle}" ></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5,5,0,5">
+                    <TextBlock Text="Capacitance [F]:" Width="100" Style="{StaticResource WhiteTextBlockStyle}"></TextBlock>
+                    <TextBox Name="txtCapacitance" Width="60" Style="{StaticResource boxStyle}" ></TextBox>
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="0"
+                    Grid.ColumnSpan="2" Margin="0,5,0,10">
+            <TextBlock Text="Number of Points:" Width="110" Margin="10,0,0,0" Style="{StaticResource WhiteTextBlockStyle}"></TextBlock>
+            <TextBox Name="txtPoints" Width="60" Style="{StaticResource boxStyle}" ></TextBox>
+        </StackPanel>
+
+        <Button Name="btnOK" Content="OK" Width="100" Grid.Row="2" Grid.Column="0"
+                IsDefault="True" Click="btnOK_Click" ></Button>
+        <Button Name="btnCanel" Content="Cancel" Width="100" Grid.Row="2" 
+                Grid.Column="1" IsCancel="true" Click="btnCanel_Click"></Button>
+    </Grid>
+</Window>

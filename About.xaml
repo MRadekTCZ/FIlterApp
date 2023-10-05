@@ -1,0 +1,36 @@
+﻿<Window x:Class="FilterApp.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FilterApp"
+        mc:Ignorable="d"
+        Title="About" Height="350" Width="1000" Background="Gray">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Content -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Margin="20">
+                <TextBlock Text="About" FontSize="24" HorizontalAlignment="Center" Margin="0,0,0,20" Foreground="White" FontWeight="Bold"/>
+                <TextBlock Text="FilterApp is an application that allows you to design your own filter" FontSize="16" HorizontalAlignment="Center" Margin="0,0,0,20" Foreground="White"/>
+                <TextBlock Text="Enter the individual filter parameters - inductance, capacitance and resistance - in the designated boxes" FontSize="16" HorizontalAlignment="Center" Margin="0,0,0,20" Foreground="White"/>
+                <TextBlock Text="When the Draw Waforms button is pressed, amplitude and phase waveforms are generated" FontSize="16" HorizontalAlignment="Center" Margin="0,0,0,20" Foreground="White"/>
+                <TextBlock Text="The results can be saved in graphical (png) or numerical (txt) form" FontSize="16" HorizontalAlignment="Center" Margin="0,0,0,20" Foreground="White"/>
+                <TextBlock Text="The set filter parameters can also be saved - it is possible to return to the project after closing the application" FontSize="16" HorizontalAlignment="Center" Margin="0,0,0,20" Foreground="White"/>
+
+
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,193 @@
+﻿<Window x:Class="FilterApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FilterApp"
+        mc:Ignorable="d"
+        Title="Passive RLC Filter" Height="450" Width="800" Loaded="Window_Loaded" Background="Gray">
+
+    <Window.Resources>
+        <Style x:Key="btnStyle" TargetType="Button">
+            <Setter Property="Background" Value="#333333"></Setter>
+            <Setter Property="Foreground" Value="#FFFFFF"></Setter>
+            <Setter Property="FontFamily" Value="Courier"></Setter>
+            <Setter Property="FontSize" Value="14"></Setter>
+        </Style>
+        <Style x:Key="boxStyle" TargetType="TextBox">
+            <Setter Property="Background" Value="#222222"></Setter>
+            <Setter Property="Foreground" Value="#FFFFFF"></Setter>
+            <Setter Property="BorderBrush" Value="#333333"></Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#333333"></Setter>
+                    <Setter Property="Foreground" Value="#FFFFFF"></Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="WhiteTextBlockStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White" />
+        </Style>
+        <Style x:Key="BoldGroupBoxStyle" TargetType="GroupBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="GroupBox">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Border Grid.Row="0" BorderThickness="1" BorderBrush="Gray" Background="Gray">
+                                <TextBlock Text="{TemplateBinding Header}" FontWeight="Bold" Padding="5" Foreground="White" />
+                            </Border>
+                            <Border Grid.Row="1" BorderThickness="1" BorderBrush="Gray">
+                                <ContentPresenter />
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <ContextMenu x:Key="contextTextBox">
+            <MenuItem Header="Reset Value" Name="resetValue" Click="resetValue_Click" Background="#333333" Foreground="#FFFFFF"></MenuItem>
+            <MenuItem Header="Other" Name="other" Background="#333333" Foreground="#FFFFFF"></MenuItem>
+        </ContextMenu>
+    </Window.Resources>
+
+    <Grid Name="mainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="26px"></RowDefinition>
+            <RowDefinition Height="4.0*"></RowDefinition>
+            <RowDefinition Height="6.0*"></RowDefinition>
+
+   
+            <RowDefinition Height="26px"></RowDefinition>
+            
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="7*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <DockPanel Height="30" HorizontalAlignment="Stretch" Margin="0,0,0,0"
+                    Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"
+                   Name="dockPanel" VerticalAlignment="Top" Width="Auto">
+
+            <Menu Height="25" Name="menu1" Width="Auto" DockPanel.Dock="Top" VerticalAlignment="Top">
+                <MenuItem Header="_File">
+                    <MenuItem Header="_Open File" Name="openFile" Click="openFile_Click">
+                        <MenuItem.Icon>
+                            <Image Source="otwieranie.jpg" Stretch="Uniform"></Image>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Save File" Name="SaveFile">
+                        <MenuItem.Icon>
+                            <Image Source="zapis.jpg" Stretch="Uniform"></Image>
+                        </MenuItem.Icon>
+                        <MenuItem Header="_Save Wafeworm as Image" Name="SaveWaweformImage" Click="SaveWaweformImage_Click">
+                            <MenuItem.Icon>
+                                <Image Source="Save_waveworm.png" Stretch="Uniform"></Image>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="_Save Waveform as data" Name="SaveWaveformCSV" Click="SaveWaveformCSV_Click">
+                            <MenuItem.Icon>
+                                <Image Source="save_data_txt.png" Stretch="Uniform"></Image>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="_Save filter parameters" Name="SaveFilter" Click="SaveFilter_Click">
+                            <MenuItem.Icon>
+                                <Image Source="Save_Filter.png" Stretch="Uniform"></Image>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </MenuItem>
+        
+
+
+                    <Separator></Separator>
+                    <MenuItem Header="_Exit" Name="exit" Click="exit_Click" ></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Parameters...">
+                    <MenuItem Header="Filter parameters" Name="filterParams" Click="filterParams_Click">
+                        <MenuItem.Icon>
+                            <Image Source="Parameters.png" Stretch="Uniform"></Image>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Draw Waveforms" Name="drawWaveforms" Click="btnRun_Click">
+                        <MenuItem.Icon>
+                            <Image Source="plomien.jpg" Stretch="Uniform"></Image>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Clear Waveforms" Name="clearWaveforms" Click="clearWaveforms_Click_1">
+                        <MenuItem.Icon>
+                            <Image Source="plomien.jpg" Stretch="Uniform"></Image>
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                </MenuItem>
+                <MenuItem Header="Help">
+                    <MenuItem Header="_About app" Name="aboutWindow" Click="aboutWindow_Click">
+                    </MenuItem>
+                    <MenuItem Header="_More info about filters" Name="MoreInfo" Click="MoreInfoFilters">
+                    </MenuItem>
+                    <MenuItem Header="_Author" Name="Author" Click="Author_Click">
+                    </MenuItem>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+
+
+        <GroupBox Header="Supply parameters" Grid.Row="2" Grid.Column="0" Style="{StaticResource BoldGroupBoxStyle}">
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal" Margin="5,5,0,5">
+                    <TextBlock Text="Voltage Max[V]:" Width="120" Style="{StaticResource WhiteTextBlockStyle}"></TextBlock>
+                    <TextBox Name="txtMagnitude" Width="60" Style="{StaticResource boxStyle}"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="5,0,0,5">
+                    <TextBlock Text="Freq. min[Hz]:" Width="120" Style="{StaticResource WhiteTextBlockStyle}"></TextBlock>
+                    <TextBox Name="txtFreqMin" Width="60" Style="{StaticResource boxStyle}"></TextBox>
+                </StackPanel>
+  
+                <StackPanel Orientation="Horizontal" Margin="5,0,0,20">
+                    <TextBlock Text="Freq. max[Hz]:" Width="120" Style="{StaticResource WhiteTextBlockStyle}"></TextBlock>
+                        <TextBox Name="txtFreqMax" Width="60" Style="{StaticResource boxStyle}"></TextBox>
+                </StackPanel>
+
+                <Button Name="btnRun" Content="Draw Waveforms" Width="120" Style="{StaticResource btnStyle}" Click="btnRun_Click">
+                    
+                </Button>
+            </StackPanel>
+
+        </GroupBox>
+        <GroupBox Header="Filter parameters" Grid.Row="1" Grid.Column="0" Style="{StaticResource BoldGroupBoxStyle}">
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,5">
+                    <TextBlock Text="Resistance 1 [Ohm] " Width="120" Style="{StaticResource WhiteTextBlockStyle}"></TextBlock>
+                    <TextBox Name="txtResistance" Width="60" Style="{StaticResource boxStyle}"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,5">
+                    <TextBlock Text="Resistance 2 [Ohm] " Width="120" Style="{StaticResource WhiteTextBlockStyle}"></TextBlock>
+                    <TextBox Name="txtResistance2" Width="60" Style="{StaticResource boxStyle}"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                    <TextBlock Text="Inductance [H]" Width="120" Style="{StaticResource WhiteTextBlockStyle}"></TextBlock>
+                    <TextBox Name="txtInductance" Width="60" Style="{StaticResource boxStyle}"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
+                    <TextBlock Text="Capacitance [F]" Width="120" Style="{StaticResource WhiteTextBlockStyle}"></TextBlock>
+                    <TextBox Name="txtCapacitance" Width="60" Style="{StaticResource boxStyle}"></TextBox>
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+        <Image Source="Filter_schematic.png" Stretch="Uniform" Name="circuitImage" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="5,5,5,5"></Image>
+        <WindowsFormsHost Name="host" Grid.Row="2" Grid.Column="1" Margin="5,5,5,5" ></WindowsFormsHost>
+        <StatusBar Grid.Row="3" Grid.ColumnSpan="2">
+        <StatusBarItem>
+            <TextBlock Name="txtStatus" Text="Ready"></TextBlock>
+        </StatusBarItem>
+        </StatusBar>
+    </Grid>
+    
+  
+</Window>

@@ -1,0 +1,47 @@
+﻿<Window x:Class="FilterApp.Author"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FilterApp"
+        mc:Ignorable="d"
+        Title="Author" Height="190" Width="360" Background="Gray">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Content -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Image and Details -->
+            <Grid Grid.Column="0" Width="100" Height="200" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Border Grid.Row="0" Grid.Column="0" Background="Gray" VerticalAlignment="Center">
+                    <Image Source="MyPic.png" Width="150" Height="150" Stretch="Uniform" HorizontalAlignment="Center" Margin="5,5,5,5"/>
+                </Border>
+         </Grid>
+        <Grid Grid.Column="2">
+                <StackPanel Grid.Row="0" Grid.Column="1" Margin="20">
+                    <TextBlock Text="Maciej Brzycki" FontSize="18" FontWeight="Bold"/>
+                    <TextBlock Text="Indeks: 176710" FontSize="14"/>
+                    <TextBlock Text="Politechnika Gdańska" FontSize="14"/>
+                    <TextBlock Text="Phone: 791 153 991" FontSize="14"/>
+                    <TextBlock Text="Email: maciej.brzycki@pg.edu.pl" FontSize="14"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

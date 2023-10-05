@@ -1,0 +1,77 @@
+D:\Mateusz\FilterApp\FilterApp\obj\Debug\FilterApp.csproj.AssemblyReference.cache
+D:\Mateusz\FilterApp\FilterApp\obj\Debug\FilterApp.csproj.SuggestedBindingRedirects.cache
+D:\Mateusz\FilterApp\FilterApp\obj\Debug\App.g.cs
+D:\Mateusz\FilterApp\FilterApp\obj\Debug\FilterApp_MarkupCompile.cache
+D:\Mateusz\FilterApp\FilterApp\bin\Debug\FilterApp.exe.config
+D:\Mateusz\FilterApp\FilterApp\bin\Debug\FilterApp.exe
+D:\Mateusz\FilterApp\FilterApp\bin\Debug\FilterApp.pdb
+D:\Mateusz\FilterApp\FilterApp\obj\Debug\MainWindow.g.cs
+D:\Mateusz\FilterApp\FilterApp\obj\Debug\FilterApp_MarkupCompile.lref
+D:\Mateusz\FilterApp\FilterApp\obj\Debug\MainWindow.baml
+D:\Mateusz\FilterApp\FilterApp\obj\Debug\FilterApp.g.resources
+D:\Mateusz\FilterApp\FilterApp\obj\Debug\FilterApp.Properties.Resources.resources
+D:\Mateusz\FilterApp\FilterApp\obj\Debug\FilterApp.csproj.GenerateResource.cache
+D:\Mateusz\FilterApp\FilterApp\obj\Debug\FilterApp.csproj.CoreCompileInputs.cache
+D:\Mateusz\FilterApp\FilterApp\obj\Debug\FilterApp.exe
+D:\Mateusz\FilterApp\FilterApp\obj\Debug\FilterApp.pdb
+D:\MOJE DOKUMENTY\STUDENT\MRB\PAI\FilterApp\FilterApp\bin\Debug\FilterApp.exe.config
+D:\MOJE DOKUMENTY\STUDENT\MRB\PAI\FilterApp\FilterApp\bin\Debug\FilterApp.exe
+D:\MOJE DOKUMENTY\STUDENT\MRB\PAI\FilterApp\FilterApp\bin\Debug\FilterApp.pdb
+D:\MOJE DOKUMENTY\STUDENT\MRB\PAI\FilterApp\FilterApp\obj\Debug\FilterApp.csproj.AssemblyReference.cache
+D:\MOJE DOKUMENTY\STUDENT\MRB\PAI\FilterApp\FilterApp\obj\Debug\FilterApp.csproj.SuggestedBindingRedirects.cache
+D:\MOJE DOKUMENTY\STUDENT\MRB\PAI\FilterApp\FilterApp\obj\Debug\MainWindow.g.cs
+D:\MOJE DOKUMENTY\STUDENT\MRB\PAI\FilterApp\FilterApp\obj\Debug\App.g.cs
+D:\MOJE DOKUMENTY\STUDENT\MRB\PAI\FilterApp\FilterApp\obj\Debug\FilterApp_MarkupCompile.cache
+D:\MOJE DOKUMENTY\STUDENT\MRB\PAI\FilterApp\FilterApp\obj\Debug\FilterApp_MarkupCompile.lref
+D:\MOJE DOKUMENTY\STUDENT\MRB\PAI\FilterApp\FilterApp\obj\Debug\MainWindow.baml
+D:\MOJE DOKUMENTY\STUDENT\MRB\PAI\FilterApp\FilterApp\obj\Debug\FilterApp.g.resources
+D:\MOJE DOKUMENTY\STUDENT\MRB\PAI\FilterApp\FilterApp\obj\Debug\FilterApp.Properties.Resources.resources
+D:\MOJE DOKUMENTY\STUDENT\MRB\PAI\FilterApp\FilterApp\obj\Debug\FilterApp.csproj.GenerateResource.cache
+D:\MOJE DOKUMENTY\STUDENT\MRB\PAI\FilterApp\FilterApp\obj\Debug\FilterApp.csproj.CoreCompileInputs.cache
+D:\MOJE DOKUMENTY\STUDENT\MRB\PAI\FilterApp\FilterApp\obj\Debug\FilterApp.exe
+D:\MOJE DOKUMENTY\STUDENT\MRB\PAI\FilterApp\FilterApp\obj\Debug\FilterApp.pdb
+D:\MOJE DOKUMENTY\STUDENT\MRB\PAI\FilterApp\FilterApp\obj\Debug\ParamWindow.g.cs
+D:\MOJE DOKUMENTY\STUDENT\MRB\PAI\FilterApp\FilterApp\obj\Debug\ParamWindow.baml
+C:\Users\macie\Desktop\Semestr3\PAI\FilterApp\FilterApp\bin\Debug\FilterApp.exe.config
+C:\Users\macie\Desktop\Semestr3\PAI\FilterApp\FilterApp\bin\Debug\FilterApp.exe
+C:\Users\macie\Desktop\Semestr3\PAI\FilterApp\FilterApp\bin\Debug\FilterApp.pdb
+C:\Users\macie\Desktop\Semestr3\PAI\FilterApp\FilterApp\obj\Debug\FilterApp.csproj.AssemblyReference.cache
+C:\Users\macie\Desktop\Semestr3\PAI\FilterApp\FilterApp\obj\Debug\FilterApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\macie\Desktop\Semestr3\PAI\FilterApp\FilterApp\obj\Debug\MainWindow.g.cs
+C:\Users\macie\Desktop\Semestr3\PAI\FilterApp\FilterApp\obj\Debug\ParamWindow.g.cs
+C:\Users\macie\Desktop\Semestr3\PAI\FilterApp\FilterApp\obj\Debug\App.g.cs
+C:\Users\macie\Desktop\Semestr3\PAI\FilterApp\FilterApp\obj\Debug\FilterApp_MarkupCompile.cache
+C:\Users\macie\Desktop\Semestr3\PAI\FilterApp\FilterApp\obj\Debug\FilterApp_MarkupCompile.lref
+C:\Users\macie\Desktop\Semestr3\PAI\FilterApp\FilterApp\obj\Debug\MainWindow.baml
+C:\Users\macie\Desktop\Semestr3\PAI\FilterApp\FilterApp\obj\Debug\ParamWindow.baml
+C:\Users\macie\Desktop\Semestr3\PAI\FilterApp\FilterApp\obj\Debug\FilterApp.g.resources
+C:\Users\macie\Desktop\Semestr3\PAI\FilterApp\FilterApp\obj\Debug\FilterApp.Properties.Resources.resources
+C:\Users\macie\Desktop\Semestr3\PAI\FilterApp\FilterApp\obj\Debug\FilterApp.csproj.GenerateResource.cache
+C:\Users\macie\Desktop\Semestr3\PAI\FilterApp\FilterApp\obj\Debug\FilterApp.csproj.CoreCompileInputs.cache
+C:\Users\macie\Desktop\Semestr3\PAI\FilterApp\FilterApp\obj\Debug\FilterApp.exe
+C:\Users\macie\Desktop\Semestr3\PAI\FilterApp\FilterApp\obj\Debug\FilterApp.pdb
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\bin\Debug\FilterApp.exe.config
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\bin\Debug\FilterApp.exe
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\bin\Debug\FilterApp.pdb
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\obj\Debug\FilterApp.csproj.AssemblyReference.cache
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\obj\Debug\FilterApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\obj\Debug\MainWindow.g.cs
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\obj\Debug\ParamWindow.g.cs
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\obj\Debug\App.g.cs
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\obj\Debug\FilterApp_MarkupCompile.cache
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\obj\Debug\FilterApp_MarkupCompile.lref
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\obj\Debug\MainWindow.baml
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\obj\Debug\ParamWindow.baml
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\obj\Debug\FilterApp.g.resources
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\obj\Debug\FilterApp.Properties.Resources.resources
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\obj\Debug\FilterApp.csproj.GenerateResource.cache
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\obj\Debug\FilterApp.csproj.CoreCompileInputs.cache
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\obj\Debug\FilterApp.exe
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\obj\Debug\FilterApp.pdb
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\obj\Debug\FilterApp_Content.g.cs
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\obj\Debug\About.g.cs
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\obj\Debug\About.baml
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\obj\Debug\Author.g.cs
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\obj\Debug\MoreInfoAboutFilters.g.cs
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\obj\Debug\Author.baml
+C:\Users\macie\Desktop\Semestr3\FIlterApp_V2\FilterApp\FilterApp\obj\Debug\MoreInfoAboutFilters.baml
